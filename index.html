@@ -3,15 +3,6 @@
 <head>
 
   <title>Chromebook Tester</title>
-  
-<!--
-
-If you need help, go to this account's gmail, check the sent emails,
-and send an email to the first sent mail there. It should have an
-attachment called "chromebooktester.html" (or *.txt).
-For verification: the email should be r*********.**t@gmail.com
-
--->
 
   <!-- Chromebook system info -->
   <script type="text/javascript">
@@ -1563,10 +1554,7 @@ For verification: the email should be r*********.**t@gmail.com
 
     /* IDs */
     #Space {
-    width: 18em;
-    }
-    #AltLeft, #AltRight, #ControlLeft, #ControlRight {
-    width: 6em;
+    width: 15em;
     }
     #videoPlayer {
     border: 1px solid black;
@@ -1706,10 +1694,11 @@ Your browser does not support the<code>audio</code> element.
   <div>
 <div id="keyboard-tests"><!-- START: Keyboard Test -->
 <h2>Keyboard Test</h2>
+<textarea id="keyboard-test" tabindex="6" onfocus="highlightOnlyOnFocus();" oncontextmenu="event.preventDefault();" rows="2" cols="60"></textarea>
 <div id="keyboard"><!-- START: Keyboard -->
 <div class="keyboard-main-area"><!-- START: Keyboard Main Area -->
 <div class="keyboard-row"><!-- START: First Row -->
-<span class="key" id="Escape">Esc</span> &nbsp; Don't forget to check your other top row keys and the headphone jack.
+<span class="key" id="Escape">Esc</span> &nbsp; Don't forget to check your other top row keys
 <!-- <span class="key key-empty"></span>
 <span class="key" id="F1">F1</span>
 <span class="key" id="F2">F2</span>
@@ -1760,8 +1749,7 @@ Your browser does not support the<code>audio</code> element.
 </div><!-- END: Third Row -->
 
 <div class="keyboard-row"><!-- START: Fourth Row -->
-<!-- <span class="key" id="CapsLock"></span> -->
-<span class="key" id="MetaLeft">&#128269;</span>
+<span class="key" id="CapsLock">Caps</span>
 <span class="key" id="KeyA">A</span>
 <span class="key" id="KeyS">S</span>
 <span class="key" id="KeyD">D</span>
@@ -1790,21 +1778,17 @@ Your browser does not support the<code>audio</code> element.
 <span class="key" id="Period">.</span>
 <span class="key" id="Slash">/</span>
 <span class="key" id="ShiftRight">Shift</span>
-<span class="key" id="ArrowUp">&#8593</span> <!-- Up Arrow -->
 </div><!-- END: Fifth Row -->
 
 <div class="keyboard-row"><!-- START: Sixth Row -->
 <span class="key" id="ControlLeft">Ctrl</span>
-<!-- <span class="key" id="MetaLeft">&#128269;</span> -->
+<span class="key" id="MetaLeft">âŠž</span>
 <span class="key" id="AltLeft">Alt</span>
 <span class="key" id="Space">Space Bar</span>
 <span class="key" id="AltRight" >Alt</span>
-<!-- <span class="key" id="MetaRight">âŠž</span> -->
+<span class="key" id="MetaRight">âŠž</span>
 <!-- <span class="key" id="ContextMenu">â–¤</span> -->
 <span class="key" id="ControlRight">Ctrl</span>
-<span class="key" id="ArrowLeft">&#8592</span> <!-- Left Arrow -->
-<span class="key" id="ArrowDown">&#8595</span> <!-- Down Arrow -->
-<span class="key" id="ArrowRight">&#8594</span> <!-- Right Arrow -->
 </div><!-- END: Sixth Row -->
 </div><!-- END: Keyboard Main Area-->
 
@@ -1831,17 +1815,17 @@ Your browser does not support the<code>audio</code> element.
 <span class="key key-empty"></span>
 </div> -->
 
-<!--<div class="keyboard-row">
+<div class="keyboard-row">
 <span class="key key-empty"></span>
-<span class="key" id="ArrowUp">&#8593</span>--> <!-- Up Arrow -->
-<!--</div>-->
+<span class="key" id="ArrowUp">&#8593</span> <!-- Up Arrow -->
+</div>
 
-<!--<div class="keyboard-row">
-<span class="key" id="ArrowLeft">&#8592</span>--> <!-- Left Arrow -->
-<!--<span class="key" id="ArrowDown">&#8595</span>--> <!-- Down Arrow -->
-<!--<span class="key" id="ArrowRight">&#8594</span>--> <!-- Right Arrow -->
-<!--</div>
-</div>--><!-- END: Keyboard Mid Area -->
+<div class="keyboard-row">
+<span class="key" id="ArrowLeft">&#8592</span> <!-- Left Arrow -->
+<span class="key" id="ArrowDown">&#8595</span> <!-- Down Arrow -->
+<span class="key" id="ArrowRight">&#8594</span> <!-- Right Arrow -->
+</div>
+</div><!-- END: Keyboard Mid Area -->
 
 <!--<div class="keyboard-numpad-area">
 <div class="keyboard-row">
@@ -1890,11 +1874,8 @@ Your browser does not support the<code>audio</code> element.
 </div>
 </div>--><!-- END: Keyboard Numpad Area-->
 </div> <!-- END: Keyboard -->
-<br /><br />
-<textarea id="keyboard-test" tabindex="6" onfocus="highlightOnlyOnFocus();" oncontextmenu="event.preventDefault();" rows="2" cols="60"></textarea>
 </div><!-- END: Keyboard Test -->
 </div>
-<marquee scrollamount="40"><img src="https://gifimage.net/wp-content/uploads/2017/11/flying-birds-gif-transparent-7.gif"></marquee>
-<br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 </body>
 </html>
